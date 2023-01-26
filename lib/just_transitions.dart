@@ -202,6 +202,24 @@ abstract class JustTransitions {
         replacement,
       );
 
+  /// Go to a [page] according to the desired transition [type].
+  ///
+  /// By default [replacement] is false.
+  ///
+  /// Setting [replacement] as false equals to:
+  ///```
+  /// Navigator.push(
+  ///   context,
+  ///   MaterialPageRoute(builder: (context) => name),
+  /// );
+  ///```
+  /// Setting [replacement] as true equals to:
+  ///```
+  /// Navigator.pushReplacement(
+  ///   context,
+  ///   MaterialPageRoute(builder: (context) => name),
+  /// );
+  ///```
   static void goTo({
     required BuildContext context,
     required Widget page,
