@@ -1,5 +1,5 @@
 name: just_transitions
-version: 1.0.0
+version: 1.0.1
 description: A package to make it easy to navigate between routes
   using animations and customizing them with different features.
 homepage: https://github.com/DamianAldair/just_transitions
