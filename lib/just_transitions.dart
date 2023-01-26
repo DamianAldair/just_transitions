@@ -219,7 +219,7 @@ abstract class JustTransitions {
           must not be declared.
         ''';
     switch (type.type) {
-      case JustTransitionTypes.material:
+      case JustTransitionSpecificType.material:
         assert(
           transitionDuration == null &&
               reverseTransitionDuration == null &&
@@ -233,7 +233,7 @@ abstract class JustTransitions {
           replacement,
         );
         break;
-      case JustTransitionTypes.cupertino:
+      case JustTransitionSpecificType.cupertino:
         assert(
           transitionDuration == null &&
               reverseTransitionDuration == null &&
@@ -247,7 +247,7 @@ abstract class JustTransitions {
           replacement,
         );
         break;
-      case JustTransitionTypes.fade:
+      case JustTransitionSpecificType.fade:
         _fadeTransition(
           context,
           page,
@@ -258,7 +258,7 @@ abstract class JustTransitions {
           replacement,
         );
         break;
-      case JustTransitionTypes.size:
+      case JustTransitionSpecificType.size:
         _sizeTransition(
           context,
           page,
@@ -270,7 +270,7 @@ abstract class JustTransitions {
           type,
         );
         break;
-      case JustTransitionTypes.scale:
+      case JustTransitionSpecificType.scale:
         _scaleTransition(
           context,
           page,
@@ -282,7 +282,7 @@ abstract class JustTransitions {
           type,
         );
         break;
-      case JustTransitionTypes.slide:
+      case JustTransitionSpecificType.slide:
         _slideTransition(
           context,
           page,
@@ -294,7 +294,7 @@ abstract class JustTransitions {
           type,
         );
         break;
-      case JustTransitionTypes.none:
+      case JustTransitionSpecificType.none:
       default:
         assert(
           transitionDuration == null &&

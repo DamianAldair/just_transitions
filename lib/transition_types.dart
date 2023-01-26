@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-enum JustTransitionTypes {
+enum JustTransitionSpecificType {
   none,
   material,
   cupertino,
@@ -11,31 +11,31 @@ enum JustTransitionTypes {
 }
 
 class JustTransitionType {
-  final JustTransitionTypes type;
+  final JustTransitionSpecificType type;
   final Alignment? alignment;
   final Axis? axis;
   final TextDirection? textDirection;
 
   JustTransitionType.none()
-      : type = JustTransitionTypes.none,
+      : type = JustTransitionSpecificType.none,
         alignment = null,
         axis = null,
         textDirection = null;
 
   JustTransitionType.material()
-      : type = JustTransitionTypes.material,
+      : type = JustTransitionSpecificType.material,
         alignment = null,
         axis = null,
         textDirection = null;
 
   JustTransitionType.cupertino()
-      : type = JustTransitionTypes.cupertino,
+      : type = JustTransitionSpecificType.cupertino,
         alignment = null,
         axis = null,
         textDirection = null;
 
   JustTransitionType.fade()
-      : type = JustTransitionTypes.fade,
+      : type = JustTransitionSpecificType.fade,
         alignment = null,
         axis = null,
         textDirection = null;
@@ -43,18 +43,18 @@ class JustTransitionType {
   JustTransitionType.size({
     this.alignment = Alignment.centerRight,
     this.axis = Axis.horizontal,
-  })  : type = JustTransitionTypes.size,
+  })  : type = JustTransitionSpecificType.size,
         textDirection = null;
 
   JustTransitionType.scale({
     this.alignment = Alignment.center,
-  })  : type = JustTransitionTypes.scale,
+  })  : type = JustTransitionSpecificType.scale,
         axis = null,
         textDirection = null;
 
   JustTransitionType.slide({
     this.textDirection = TextDirection.ltr,
-  })  : type = JustTransitionTypes.slide,
+  })  : type = JustTransitionSpecificType.slide,
         alignment = null,
         axis = null;
 }
