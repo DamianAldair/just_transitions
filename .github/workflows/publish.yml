@@ -9,15 +9,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@main
       
       - name: Install Flutter
-        uses: subosito/flutter-action@v2.8.0
+        uses: subosito/flutter-action@main
         with:
-          flutter-version: '3.3.3'
+          channel: 'stable'
 
       - name: Install dependencies
         run: flutter pub get
+        
+      - name: Check Flutter version
+        run: flutter --version
         
       - name: Analyze project source
         run: flutter analyze
@@ -29,7 +32,7 @@ jobs:
         run: dart pub publish --dry-run
         
       - name: Publish
-        uses: k-paxian/dart-package-publisher@v1.5.1
+        uses: k-paxian/dart-package-publisher@master
         with:
           credentialJson: ${{ secrets.CREDENTIAL_JSON }}
           flutter: true
