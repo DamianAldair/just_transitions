@@ -1,6 +1,10 @@
 # JustTransitions
 
-![just_transitions_logo](https://github.com/DamianAldair/just_transitions/blob/master/images/just_transitions.svg)
+<p float="center">
+    <img scr = "https://github.com/DamianAldair/just_transitions/blob/master/images/just_transitions.svg"
+    alt = "just_transitions_logo"
+    width = "400">
+</p>
 
 A package to make it easy to navigate between routes using animations and customizing them with some features.
 
