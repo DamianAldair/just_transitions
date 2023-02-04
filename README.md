@@ -1,5 +1,7 @@
 # JustTransitions
 
+![just_transitions_logo](https://github.com/DamianAldair/just_transitions/blob/master/images/just_transitions.svg)
+
 A package to make it easy to navigate between routes using animations and customizing them with some features.
 
 ## Available transitions
@@ -15,6 +17,12 @@ A package to make it easy to navigate between routes using animations and custom
 ## Getting started
 
 Just import this library in the pubspec.yaml.
+
+```yaml
+dependencies:
+  just_transitions:
+```
+
 All done.
 
 ## Usage
